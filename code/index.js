@@ -5,12 +5,7 @@ const BASE_URL_IMG = "https://image.tmdb.org/t/p/original/"
 
 $(document).ready(function () {
     createCarouselItems();
-    $("p").greenify();
 })
-
-$.fn.greenify = function() {
-    this.css( "color", "green" );
-};
 
 const createCarouselItems = () => {
     var url = BASE_URL_POPULAR + APY_KEY + LANGUAGE + "&page=1";
