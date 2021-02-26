@@ -6,14 +6,14 @@ const URL_PAGE = "&page="
 
 var page = '1';
 
-$(document).ready(function() {
-    
+$(document).ready(function () {
+
     getUpcomingMovies(page);
 })
 
 const getUpcomingMovies = (pageIndex) => {
-    let url =  BASE_URL_UPCOMING + APY_KEY + LANGUAGE + URL_PAGE + pageIndex;
-    $.getJSON(url, function(data) {
+    let url = BASE_URL_UPCOMING + APY_KEY + LANGUAGE + URL_PAGE + pageIndex;
+    $.getJSON(url, function (data) {
         console.log(data);
         clearHTML();
         createCardsActors(data.results);
@@ -58,7 +58,7 @@ const createPaginationItems = (totalPages) => {
     for (let i = 1; i <= totalPages; i++) {
         let li = $(`<li class="page-item"></li>`);
         let link = $(`<a class="page-link" onClick="getUpcomingMovies(${i}); return false;">${i}</a>`);
-    
+
         link.appendTo(li);
         li.appendTo('.pagination');
     }

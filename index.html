@@ -1,86 +1,104 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- SCRIPT -->
-    <script type="text/javascript" src="code/index.js" defer></script>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="styles/standard.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      <!-- MAIN MENU -->
-      <nav class="navbar navbar-dark navbar-expand-lg w-100">
-        <a class="navbar-brand" href="#"><img src="img/Logo.svg" alt="logo" height="50" width="50"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" id="home" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="movie" href="./pages/movies.html">Movies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="tvshows" href="./pages/tvshows.html">TV Shows</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="actors" href="./pages/actors.html">Actors</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- CAROUSEL -->
-      <div id="carousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner"><!-- CAROUSEL ITEMS --></div>
-        
-        <!--Controles NEXT y PREV-->
-        <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <!-- END CAROUSEL -->
-      <!-- CONTAINER MOVIES -->
-      <div class="container-overlay"> 
-        <img src="img/movies.jpg" class="image"> 
-        <div class="container-txt rounded">
-          <h1>Movies</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-          <button class="btn-dark rounded"><a href="pages/movie.html">Ver más</a></button>
-        </div>
-      </div>
-      <!-- CONTAINER TV SHOWS -->
-      <div class="container-overlay"> 
-        <img src="img/tvshow.jpg" class="image"> 
-        <div class="container-txt rounded">
-          <h1>TV Shows</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-          <button class="btn-dark rounded"><a href="pages/tvshows.html">Ver más</a></button>
-        </div>
-      </div>
-      <!-- CONTAINER ACTORS -->
-      <div class="container-overlay"> 
-        <img src="img/actors.jpg" class="image"> 
-        <div class="container-txt rounded">
-          <h1>Actors</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-          <button class="btn-dark rounded"><a href="pages/actors.html">Ver más</a></button>
-        </div>
-      </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+  <title>Home</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- SCRIPT -->
+  <script type="text/javascript" src="code/index.js" defer></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="styles/standard.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="image/ico" href="favicon.ico"/>
+</head>
+
+<body>
+  <!-- MAIN MENU -->
+  <nav class="navbar navbar-dark navbar-expand-lg w-100">
+    <a class="navbar-brand" href="#"><img src="img/Logo.svg" alt="logo" height="50" width="50"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" id="home" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="movie" href="./pages/movies.html">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="tvshows" href="./pages/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- CAROUSEL -->
+  <div id="carousel1" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <!-- CAROUSEL ITEMS -->
+    </div>
+
+    <!--Controles NEXT y PREV-->
+    <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- END CAROUSEL -->
+  <!-- CONTAINER MOVIES -->
+  <div class="container-overlay">
+    <img src="img/movies.jpg" class="image">
+    <div class="container-txt rounded">
+      <h1>Movies</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+      </p>
+      <button class="btn-dark rounded"><a href="pages/movie.html">Ver más</a></button>
+    </div>
+  </div>
+  <!-- CONTAINER TV SHOWS -->
+  <div class="container-overlay">
+    <img src="img/tvshow.jpg" class="image">
+    <div class="container-txt rounded">
+      <h1>TV Shows</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+      </p>
+      <button class="btn-dark rounded"><a href="pages/tvshows.html">Ver más</a></button>
+    </div>
+  </div>
+  <!-- CONTAINER ACTORS -->
+  <div class="container-overlay">
+    <img src="img/actors.jpg" class="image">
+    <div class="container-txt rounded">
+      <h1>Actors</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+      </p>
+      <button class="btn-dark rounded"><a href="pages/actors.html">Ver más</a></button>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

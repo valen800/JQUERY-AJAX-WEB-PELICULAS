@@ -3,13 +3,18 @@ const BASE_URL_POPULAR = " https://api.themoviedb.org/3/movie/popular?api_key="
 const LANGUAGE = "&language=es-ES"
 const BASE_URL_IMG = "https://image.tmdb.org/t/p/original/"
 
-$(document).ready(function() {
+$(document).ready(function () {
     createCarouselItems();
+    $("p").greenify();
 })
 
+$.fn.greenify = function() {
+    this.css( "color", "green" );
+};
+
 const createCarouselItems = () => {
-    var url =  BASE_URL_POPULAR + APY_KEY + LANGUAGE + "&page=1";
-    $.getJSON(url, function(data) {
+    var url = BASE_URL_POPULAR + APY_KEY + LANGUAGE + "&page=1";
+    $.getJSON(url, function (data) {
         console.log(data.results[0]);
         data.results.forEach(element => {
             var title = element.original_title;
@@ -23,7 +28,7 @@ const createCarouselItems = () => {
             } else {
                 var div = $('<div class="carousel-item">')
             }
-            
+
             // create image
             var img = $(`<img src="${urlImg}" alt="${title}">`);
 
@@ -31,7 +36,7 @@ const createCarouselItems = () => {
             var divCaption = $('<div class="carousel-caption rounded d-none d-md-block">')
             var h5Caption = $('<h1>' + title + '</h1>')
             var pCaption = $('<h5>' + overview + '</h5>')
-            
+
             h5Caption.appendTo(divCaption)
             pCaption.appendTo(divCaption)
             divCaption.appendTo(div)
